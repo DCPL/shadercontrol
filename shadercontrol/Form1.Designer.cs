@@ -58,6 +58,7 @@
             this.smaaOFF = new System.Windows.Forms.Button();
             this.smaaON = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.resetBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.manualFocusDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blurRadius)).BeginInit();
             this.SuspendLayout();
@@ -312,9 +313,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label10.Location = new System.Drawing.Point(558, 275);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 13);
+            this.label10.Size = new System.Drawing.Size(24, 13);
             this.label10.TabIndex = 25;
-            this.label10.Text = "@CLCCO";
+            this.label10.Text = "test";
             // 
             // smaaOFF
             // 
@@ -346,11 +347,22 @@
             this.label11.Text = "Enable SMAA";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // resetBtn
+            // 
+            this.resetBtn.Location = new System.Drawing.Point(228, 231);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(121, 23);
+            this.resetBtn.TabIndex = 29;
+            this.resetBtn.Text = "Reset Settings";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 297);
+            this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.smaaOFF);
             this.Controls.Add(this.smaaON);
             this.Controls.Add(this.label11);
@@ -422,6 +434,7 @@
         private System.Windows.Forms.Button smaaOFF;
         private System.Windows.Forms.Button smaaON;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button resetBtn;
     }
 }
 

@@ -14,7 +14,7 @@ namespace shadercontrol
     public partial class Form1 : Form
     {
         string[] lines = File.ReadAllLines("D:/Mastereffect.h");
-        
+        //these should probably be their own functions eventually
 
         public Form1()
         {
@@ -200,6 +200,41 @@ namespace shadercontrol
             smaaOff = smaaOff.Replace(lines[68], "#define USE_SMAA 0");
             lines[68] = smaaOff;
             File.WriteAllLines("D:/Mastereffect.h", lines);
+        }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            //im aware this is a really shitty way to do this
+
+            string buffer = lines[14];
+            buffer = buffer.Replace(lines[14], "#define USE_DEPTHBUFFER_OUTPUT 0");
+            lines[14] = buffer;
+
+            string splitScrn = lines[15];
+            splitScrn = splitScrn.Replace(lines[15], "#define USE_SPLITSCREEN 0");
+            lines[15] = splitScrn;
+
+            string bloom = lines[53];
+            bloom = bloom.Replace(lines[53], "#define USE_BLOOM 0");
+            lines[53] = bloom;
+
+            string ssao = lines[60];
+            ssao = ssao.Replace(lines[60], "#define USE_AMBIENTOCCLUSION 0");
+            lines[60] = ssao;
+
+            string smaa = lines[68];
+            smaa = smaa.Replace(lines[68], "#define USE_SMAA 0");
+            lines[68] = smaa;
+
+            string focus = lines[330];
+            string blur = lines[328];
+            focus = focus.Replace(lines[330], "#define DOF_MANUALFOCUSDEPTH 0");
+            blur = blur.Replace(lines[328], "#define DOF_BLURRADIUS 5");
+            lines[330] = focus;
+            lines[328] = blur;
+
+            System.Threading.Thread.Sleep(2000);
+            File.WriteAllLines("D:/MasterEffect.h", lines);
         }
     }
 }
