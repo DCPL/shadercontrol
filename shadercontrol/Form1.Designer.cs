@@ -59,6 +59,8 @@
             this.smaaON = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.resetBtn = new System.Windows.Forms.Button();
+            this.versionLabel = new System.Windows.Forms.Label();
+            this.versionNumLable = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.manualFocusDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blurRadius)).BeginInit();
             this.SuspendLayout();
@@ -349,7 +351,7 @@
             // 
             // resetBtn
             // 
-            this.resetBtn.Location = new System.Drawing.Point(228, 231);
+            this.resetBtn.Location = new System.Drawing.Point(250, 231);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(121, 23);
             this.resetBtn.TabIndex = 29;
@@ -357,11 +359,35 @@
             this.resetBtn.UseVisualStyleBackColor = true;
             this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
+            // versionLabel
+            // 
+            this.versionLabel.AutoSize = true;
+            this.versionLabel.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.versionLabel.Location = new System.Drawing.Point(9, 275);
+            this.versionLabel.Margin = new System.Windows.Forms.Padding(10, 0, 3, 0);
+            this.versionLabel.Name = "versionLabel";
+            this.versionLabel.Size = new System.Drawing.Size(45, 13);
+            this.versionLabel.TabIndex = 30;
+            this.versionLabel.Text = "Version:";
+            // 
+            // versionNumLable
+            // 
+            this.versionNumLable.AutoSize = true;
+            this.versionNumLable.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.versionNumLable.Location = new System.Drawing.Point(54, 275);
+            this.versionNumLable.Margin = new System.Windows.Forms.Padding(0);
+            this.versionNumLable.Name = "versionNumLable";
+            this.versionNumLable.Size = new System.Drawing.Size(46, 13);
+            this.versionNumLable.TabIndex = 31;
+            this.versionNumLable.Text = "0.3.10.0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 297);
+            this.Controls.Add(this.versionNumLable);
+            this.Controls.Add(this.versionLabel);
             this.Controls.Add(this.resetBtn);
             this.Controls.Add(this.smaaOFF);
             this.Controls.Add(this.smaaON);
@@ -435,6 +461,8 @@
         private System.Windows.Forms.Button smaaON;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.Label versionLabel;
+        private System.Windows.Forms.Label versionNumLable;
     }
 }
 
