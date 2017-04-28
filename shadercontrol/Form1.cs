@@ -43,11 +43,6 @@ namespace shadercontrol
             focusDepthText.Text = finalValue.ToString();
         }
 
-        private void manualFocusDepth_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void manualFocusDepth_MouseUp(object sender, MouseEventArgs e)
         {
             double value = manualFocusDepth.Value / 10d;
@@ -235,6 +230,16 @@ namespace shadercontrol
 
             System.Threading.Thread.Sleep(2000);
             File.WriteAllLines("D:/MasterEffect.h", lines);
+        }
+
+        private void twitterLink_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.twitter.com/clcco");
+        }
+
+        private void versionNumLable_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/DCPL/shadercontrol/tree/master/shadercontrol");
         }
     }
 }

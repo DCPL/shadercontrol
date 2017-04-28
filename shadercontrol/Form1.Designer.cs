@@ -54,7 +54,7 @@
             this.blurSetBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.twitterLink = new System.Windows.Forms.Label();
             this.smaaOFF = new System.Windows.Forms.Button();
             this.smaaON = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -75,7 +75,6 @@
             this.manualFocusDepth.TickFrequency = 10;
             this.manualFocusDepth.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.manualFocusDepth.Scroll += new System.EventHandler(this.manualFocusDepth_Scroll);
-            this.manualFocusDepth.ValueChanged += new System.EventHandler(this.manualFocusDepth_ValueChanged);
             this.manualFocusDepth.MouseUp += new System.Windows.Forms.MouseEventHandler(this.manualFocusDepth_MouseUp);
             // 
             // label1
@@ -308,16 +307,18 @@
             this.label9.TabIndex = 24;
             this.label9.Text = "5-50";
             // 
-            // label10
+            // twitterLink
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label10.Location = new System.Drawing.Point(558, 275);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(24, 13);
-            this.label10.TabIndex = 25;
-            this.label10.Text = "test";
+            this.twitterLink.AutoSize = true;
+            this.twitterLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.twitterLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.twitterLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.twitterLink.Location = new System.Drawing.Point(558, 275);
+            this.twitterLink.Name = "twitterLink";
+            this.twitterLink.Size = new System.Drawing.Size(24, 13);
+            this.twitterLink.TabIndex = 25;
+            this.twitterLink.Text = "test";
+            this.twitterLink.Click += new System.EventHandler(this.twitterLink_Click);
             // 
             // smaaOFF
             // 
@@ -380,6 +381,7 @@
             this.versionNumLable.Size = new System.Drawing.Size(46, 13);
             this.versionNumLable.TabIndex = 31;
             this.versionNumLable.Text = "0.3.10.0";
+            this.versionNumLable.Click += new System.EventHandler(this.versionNumLable_Click);
             // 
             // Form1
             // 
@@ -392,7 +394,7 @@
             this.Controls.Add(this.smaaOFF);
             this.Controls.Add(this.smaaON);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.twitterLink);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.blurSetBtn);
@@ -456,7 +458,7 @@
         private System.Windows.Forms.TextBox blurSetBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label twitterLink;
         private System.Windows.Forms.Button smaaOFF;
         private System.Windows.Forms.Button smaaON;
         private System.Windows.Forms.Label label11;
