@@ -228,6 +228,9 @@ namespace shadercontrol
             lines[330] = focus;
             lines[328] = blur;
 
+            depthSetBox.Clear();
+            blurSetBox.Clear();
+
             System.Threading.Thread.Sleep(2000);
             File.WriteAllLines("D:/MasterEffect.h", lines);
         }

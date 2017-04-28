@@ -374,6 +374,7 @@
             // versionNumLable
             // 
             this.versionNumLable.AutoSize = true;
+            this.versionNumLable.Cursor = System.Windows.Forms.Cursors.Hand;
             this.versionNumLable.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.versionNumLable.Location = new System.Drawing.Point(54, 275);
             this.versionNumLable.Margin = new System.Windows.Forms.Padding(0);
