@@ -381,7 +381,7 @@
             this.versionNumLable.Name = "versionNumLable";
             this.versionNumLable.Size = new System.Drawing.Size(46, 13);
             this.versionNumLable.TabIndex = 31;
-            this.versionNumLable.Text = "0.3.10.0";
+            this.versionNumLable.Text = "0.3.10.2";
             this.versionNumLable.Click += new System.EventHandler(this.versionNumLable_Click);
             // 
             // Form1
