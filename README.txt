@@ -23,7 +23,7 @@ FAQ:
 Q:  When I change the effects or values nothing happens in-game
 A:  Make sure all required files are in the same directory.
     - Depending on your file-system, you may need to run the program as an Administrator.
-    - Check shader versions and directX versions make sure they match whats required.
+    - Check shader versions and directX versions make sure they match what's required.
     - Make sure the Mastereffect file has NOT been renamed.
 
 Q:  The shader is throwing errors on values or equations
@@ -33,7 +33,7 @@ A:  All of the inputs should be error protected but if it does occur make sure y
 Q:  Certain buttons freeze the program for a few seconds
 A:  This is intentional, the shaders can't be updated quickly this is to prevent it from crashing.
 
-Q:  Not every effect is avalible in the control.
+Q:  Not every effect is available in the control.
 A:  I am working on adding them as I go, this is very beta as of now only popular options are here.
 
 Copyright DCPL - 2017
